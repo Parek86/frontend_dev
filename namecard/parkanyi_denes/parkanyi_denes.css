@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed',     sans-serif;
+}
+/* Positioning */
+
+body {
+   font-size:16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background: url('https://image.freepik.com/free-photo/business-people-handshake-greeting-deal-at-work_1150-645.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.profile-card {
+  min-width: 320px;
+  max-width: calc(100vw - 100px);
+  background-color: hsla(0, 0%, 100%, .7);
+  border-radius: 20px;
+  box-shadow: hsla(0, 0%, 0%, .4) 10px 10px               50px;
+  min-height:320px;
+  max-height:calc(100vh - 100px);
+}
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 1px;
+  transition: all 0.1s ease-in-out;
+  filter: grayscale(80%);
+}
+img:hover {
+  filter: grayscale(0%);
+}
+.about{
+font-family: 'Lora', serif;
+text-align: center;
+ padding: 5%;
+}
+
+
+.head, .links {
+  text-align: center;
+  margin: 10px;
+}
+
+.profile-image {
+  margin-top: -50px;
+}
+.content {
+  text-align: center;
+  padding: 5% 10%;
+  max-height:calc(100vh - 50px);
+}
+@media (max-width: 640px) {
+  .profile-card{
+   font-size: 10px;
+   max-width: calc(100vw - 10px);
+   max-height:calc(100vh - 20px);
+  }
+  .profile-image {
+  margin-top: -10px;
+}
+  img {
+  width: 40px;
+  height: 40px;
+  }
+}
