@@ -1,0 +1,24 @@
+small {
+  color: orange;
+}
+h1,
+h2 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+img {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.main {
+  margin-bottom: 2rem;
+}
+.title h1 {
+  font-size: 6rem
+}
+.list-group {
+  margin-bottom: 5rem;
+}
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+}
