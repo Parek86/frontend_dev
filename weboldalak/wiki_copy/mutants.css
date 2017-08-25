@@ -1,0 +1,60 @@
+h1::after {
+  content: "";
+  display: block;
+  height: .1rem;
+  margin-top:0.5rem;
+  background-color: #444349;
+}
+h3::after {
+  content: "";
+  display: block;
+  height: .1rem;
+  margin-top:0.5rem;
+  background-color: #444349;
+}
+div{
+margin:1.5vh;
+}
+body,p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+p{
+  text-align: justify;
+}
+img{
+  max-width: 250px;
+}
+.float-right{
+  float: right;
+  margin:10px;
+}
+.float-left{
+  float: left;
+  margin:10px;
+}
+.row{
+  clear: both;
+}
+.center{
+  text-align: center;
+}
+/*List item*/
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+ol > li {
+  display: table;
+  counter-increment: item;
+}
+ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+}
+li ol > li:before {
+  content: counters(item, ".") " ";
+}
+/**/
